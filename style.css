@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+
+  --DarkGray: hsl(0, 0%, 63%);
+  --Black: hsl(0, 0%, 0%);
+  --White: hsl(0, 0%, 100%);
+  --VeryDarkGray: hsl(0, 0%, 27%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: "League Spartan", sans-serif;
+}
+
+
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* slides */
+.slider__img {
+  position: relative;
+  overflow: hidden;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.slider__img img {
+  position: absolute;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slider__img img.prev,
+.slider__img img.prev1 {
+  transform: translateX(-100%);
+}
+
+.slider__img img.next,
+.slider__img img.next1 {
+  transform: translateX(100%);
+}
+
+.slider__img img.current,
+.slider__img img.current1 {
+  opacity: 1;
+  transform: translateX(0);
+}

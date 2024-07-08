@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Room homepage</title>
+
+</head>
+
+<body>
+  <main class="max-w-[100%] flex flex-col justify-center items-center ">
+
+    <header class="w-[100%] flex flex-col md:flex-row justify-center items-center gap-20">
+      <div class="  md:w-[70%] ">
+        <div class="sub z-20 absolute flex justify-center items-center w-[100%]">
+          <ul id="subButton"
+            class="lowercase font-bold text-[16px]  mb-[-20px] flex gap-6 hidden text-black justify-center items-center h-[100px] bg-[--White] w-[100%] ">
+            <img id="subMenuClose" class="md:hidden pr-10 ml-[-100px]" src="./images/icon-close.svg" alt="logo">
+
+            <li class="hover:border-b-2"><a href="#">Home</a></li>
+            <li class="hover:border-b-2"><a href="#">Shop</a></li>
+            <li class="hover:border-b-2"><a href="#">About</a></li>
+            <li class="hover:border-b-2"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <nav id="menuHide" class=" w-[100%]  flex p-4  items-center gap-20 absolute m-[20px] z-10 text-[--White]">
+          <img id="subMenu" class="md:hidden" src="./images/icon-hamburger.svg" alt="logo">
+
+          <img class="md:ml-[20px]" src="./images/logo.svg" alt="logo">
+
+
+          <ul class="lowercase  md:flex gap-4 hidden ">
+            <li class="hover:border-b-2"><a href="">Home</a></li>
+            <li class="hover:border-b-2"><a href="#">Shop</a></li>
+            <li class="hover:border-b-2"><a href="#">About</a></li>
+            <li class="hover:border-b-2"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div id="blure" class="blure ">
+
+          <div class="desktop slider__img hidden md:block">
+            <img src="./images/desktop-image-hero-1.jpg" alt="img" class='prev'>
+            <img src="./images/desktop-image-hero-2.jpg" alt="img" class='current '>
+            <img src="./images/desktop-image-hero-3.jpg" alt="img" class='next'>
+
+          </div>
+
+          <div class="mobile slider__img md:hidden block ">
+            <!-- mobile -->
+            <img src="./images/mobile-image-hero-1.jpg" alt="img" class='prev1 '>
+            <img src="./images/mobile-image-hero-2.jpg" alt="img" class='current1 '>
+            <img src="./images/mobile-image-hero-3.jpg " alt="img" class='next1 '>
+          </div>
+        </div>
+      </div>
+      <div id="blure1" class=" slider__btn md:hidden block  w-[100px] absolute mr-[-300px] mb-[70px]">
+        <button class='prevBtn1 w-[50%] p-3 bg-[black] float-left hover:bg-[gray]  bg-[black]'><img
+            src="./images/icon-angle-left.svg" alt="img"></button>
+        <button class='nextBtn1 w-[50%] p-3 bg-[black] hover:bg-[gray]  float-right'><img
+            src="./images/icon-angle-right.svg" alt="img"></button>
+      </div>
+
+      <div id="blure2" class=" md:w-[30%] flex flex-col justify-center items-center py-8 ">
+        <div class="flex flex-col justify-center  gap-8">
+          <h1 class="font-[700] text-[--black] text-[40px] md:text-[50px] w-[350px] md:w-[450px] leading-10">
+            Discover innovative ways to decorate
+          </h1>
+          <p class="text-[--DarkGray]  leading-4 w-[300px] md:w-[400px]">
+            We provide unmatched quality, comfort, and style for property owners across the country.
+            Our experts combine form and function in bringing your vision to life. Create a room in your
+            own style with our collection and make your property a reflection of you and what you love.
+          </p>
+          <div class="ml-[-20px] text-[16px]">
+            <button
+              class="uppercase tracking-[10px] flex justify-center items-center p-4 gap-4 hover:text-[--DarkGray] ">Shop
+              now <span><img src="./images/icon-arrow.svg" alt="arrow"></span></button>
+          </div>
+        </div>
+        <div class="slider__btn hidden md:block w-[100px] ml-[-115%] mb-[-87px]">
+          <button class='prevBtn w-[50%] p-3  bg-[black] hover:bg-[gray]  float-left'><img
+              src="./images/icon-angle-left.svg" alt="img"></button>
+          <button class='nextBtn w-[50%] p-3 bg-[black] hover:bg-[gray]  float-right'><img
+              src="./images/icon-angle-right.svg" alt="img"></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex flex-col md:flex-row justify-center items-center w-[100%]">
+      <img src="./images/image-about-dark.jpg" alt="img">
+
+      <div class="flex flex-col  items-cente w-[50%] text-start md:p-16">
+        <h2 class="text-[16px] font-bold uppercase tracking-[4px] w-[300px]  "> About our furniture</h2>
+        <p class="w-[300px] md:w-[400px] text-[--DarkGray]  leading-4 ">
+          Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.
+        </p>
+      </div>
+
+      <img src="./images/image-about-light.jpg" alt="img">
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="./script.js"></script>
+
+
+</body>
+
+</html>
